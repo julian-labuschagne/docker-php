@@ -1,6 +1,6 @@
-FROM php:7.2.5-apache-stretch
+FROM php:7.0.30-apache-stretch
 MAINTAINER Julian Labuschagne "julian.labuschagne@gmail.com"
-ENV REFRESHED_AT 2018-05-09
+ENV REFRESHED_AT 2018-05-29
 
 RUN apt-get update && apt-get install -y \
 	libpng-dev
