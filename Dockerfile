@@ -5,7 +5,7 @@ ENV REFRESHED_AT 2018-05-29
 RUN apt-get update && apt-get install -y \
 	libpng-dev
 
-RUN docker-php-ext-install -j$(nproc) gd opcache mysqli pdo_mysql
+RUN docker-php-ext-install -j$(nproc) gd opcache mysqli pdo_mysql zip
 
 RUN a2enmod rewrite
 
