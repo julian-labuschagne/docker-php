@@ -1,11 +1,15 @@
 FROM php:7.2-apache-stretch
 MAINTAINER Julian Labuschagne "julian.labuschagne@gmail.com"
-ENV REFRESHED_AT 2018-07-03
+ENV REFRESHED_AT 2018-11-30
 
 RUN apt-get update && apt-get install -y \
+	libfreetype6-dev \
+	libjpeg62-turbo-dev \
 	libpng-dev
 
-RUN docker-php-ext-install -j$(nproc) gd opcache mysqli pdo_mysql zip
+RUN docker-php-ext-install -j$(nproc) opcache mysqli pdo_mysql zip && \
+    docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ && \
+    docker-php-ext-install -j$(nproc) gd
 
 RUN a2enmod rewrite
 
