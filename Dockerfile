@@ -1,4 +1,4 @@
-FROM php:7.2.5-apache-stretch
+FROM php:5.6-apache-stretch 
 MAINTAINER Julian Labuschagne "julian.labuschagne@gmail.com"
 ENV REFRESHED_AT 2018-05-09
 
