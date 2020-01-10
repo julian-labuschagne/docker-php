@@ -14,5 +14,6 @@ RUN docker-php-ext-install -j$(nproc) opcache mysqli pdo_mysql zip && \
 
 RUN a2enmod rewrite
 
-RUN useradd -r -u 1000 -g php php
+RUN groupadd -g 1000 php && \
+    useradd -r -u 1000 -g php php
 USER appuser
