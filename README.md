@@ -9,3 +9,7 @@ The image has the following extensions PHP extensions installed:
 * opcache
 * pdo_mysql 
 * zip 
+
+```
+docker pull julianlab/php
+```
