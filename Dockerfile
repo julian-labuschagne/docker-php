@@ -16,4 +16,3 @@ RUN a2enmod rewrite
 
 RUN groupadd -g 1000 php && \
     useradd -r -u 1000 -g php php
-USER php
