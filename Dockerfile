@@ -1,6 +1,6 @@
 FROM php:7.2-apache-stretch
 MAINTAINER Julian Labuschagne "julian.labuschagne@gmail.com"
-ENV REFRESHED_AT 2018-07-03
+ENV REFRESHED_AT 2020-05-25
 
 RUN apt-get update && apt-get install -y \
 	libpng-dev
