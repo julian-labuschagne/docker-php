@@ -1,6 +1,6 @@
-FROM php:7.3.11-apache-stretch
+FROM php:7.4-apache-stretch
 MAINTAINER Julian Labuschagne "julian.labuschagne@gmail.com"
-ENV REFRESHED_AT 2020-07-12
+ENV REFRESHED_AT 2021-02-26
 
 RUN apt-get update && apt-get install -y \
 	libfreetype6-dev \
