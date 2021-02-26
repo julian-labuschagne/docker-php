@@ -1,4 +1,4 @@
-FROM php:7.4-apache-stretch
+FROM php:7.4-apache-buster
 MAINTAINER Julian Labuschagne "julian.labuschagne@gmail.com"
 ENV REFRESHED_AT 2021-02-26
 
